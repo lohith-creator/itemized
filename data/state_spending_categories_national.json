@@ -1,0 +1,16 @@
+{
+  "fiscal_year": 2024,
+  "scope": "national aggregate across all 50 states - NOT state-specific yet",
+  "source": "NASBO 2025 State Expenditure Report (FY2023-2025), as summarized by Greene Barrett",
+  "source_url": "https://www.greenebarrett.com/management-update/the-latest-on-state-spending-a-new-nasbo-report",
+  "categories": [
+    { "id": "medicaid", "label": "Medicaid", "percent": 29.8, "notes": "Includes both state and federal funds; largest single category by far" },
+    { "id": "k12_education", "label": "K-12 Education", "percent": 18.9 },
+    { "id": "higher_education", "label": "Higher Education", "percent": 8.7 },
+    { "id": "transportation", "label": "Transportation", "percent": 8.0 },
+    { "id": "corrections", "label": "Corrections", "percent": 2.7 },
+    { "id": "public_assistance", "label": "Public Assistance", "percent": 1.0 },
+    { "id": "all_other", "label": "All Other (housing, environment, admin, etc.)", "percent": 30.9 }
+  ],
+  "todo": "This is the same for every state right now, which defeats the point of a comparison view. To get real IL vs. TX vs. CA differences, pull the actual category tables from the NASBO 2025 State Expenditure Report PDF (linked above), or each state's own comptroller/budget office annual report. Flagging this as the next real step rather than faking per-state numbers."
+}

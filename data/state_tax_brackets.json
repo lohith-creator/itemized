@@ -1,0 +1,37 @@
+{
+  "tax_year": 2025,
+  "note": "Illinois and Texas rates verified current for 2026 filing. California brackets are for income earned in 2025 (filed 2026) - the most recent full bracket table found; check for a 2026-specific inflation update before shipping.",
+  "states": {
+    "IL": {
+      "name": "Illinois",
+      "structure": "flat",
+      "rate": 0.0495,
+      "notes": "Flat 4.95% on all taxable income, mandated by the state constitution. No standard deduction - uses a personal exemption (~$2,850-2,925 per person) instead. Does not tax Social Security, pensions, or retirement account withdrawals.",
+      "source_url": "https://taxfoundation.org/location/illinois/"
+    },
+    "TX": {
+      "name": "Texas",
+      "structure": "none",
+      "rate": 0.0,
+      "notes": "No state income tax. Texas relies more heavily on sales tax and property tax to fund state and local government - worth showing as a contrast in the app rather than a blank row.",
+      "source_url": "https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/"
+    },
+    "CA": {
+      "name": "California",
+      "structure": "progressive",
+      "brackets_single": [
+        { "rate": 0.01, "up_to": 11079 },
+        { "rate": 0.02, "up_to": 26264 },
+        { "rate": 0.04, "up_to": 41452 },
+        { "rate": 0.06, "up_to": 57542 },
+        { "rate": 0.08, "up_to": 72724 },
+        { "rate": 0.093, "up_to": 371479 },
+        { "rate": 0.103, "up_to": 445771 },
+        { "rate": 0.113, "up_to": 742953 },
+        { "rate": 0.123, "up_to": null }
+      ],
+      "notes": "Nine brackets from 1% to 12.3%, plus an additional 1% Behavioral Health Services surtax on income over $1,000,000. Standard deduction is much smaller than federal - roughly $5,540 single (2024 figure; confirm current year before shipping).",
+      "source_url": "https://www.nerdwallet.com/taxes/learn/california-state-tax"
+    }
+  }
+}

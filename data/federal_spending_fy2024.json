@@ -1,0 +1,60 @@
+{
+  "fiscal_year": 2024,
+  "total_outlays_usd": 6900000000000,
+  "source": "Center on Budget and Policy Priorities, using CBO account-level expenditure data (June 2024)",
+  "source_url": "https://www.cbpp.org/research/federal-budget/where-do-our-federal-tax-dollars-go",
+  "categories": [
+    {
+      "id": "health_insurance",
+      "label": "Health Insurance (Medicare, Medicaid, CHIP, ACA)",
+      "percent": 24.0,
+      "amount_usd": 1700000000000,
+      "omb_functions": [570, 550],
+      "notes": "Of this, $912B went to Medicare specifically; $626B to Medicaid/CHIP; $125B to ACA subsidies."
+    },
+    {
+      "id": "social_security",
+      "label": "Social Security",
+      "percent": 21.0,
+      "amount_usd": 1500000000000,
+      "omb_functions": [650]
+    },
+    {
+      "id": "interest_on_debt",
+      "label": "Interest on the National Debt",
+      "percent": 13.0,
+      "amount_usd": 892000000000,
+      "omb_functions": [900],
+      "notes": "Not a program - the cost of past borrowing. Worth flagging distinctly in the UI."
+    },
+    {
+      "id": "defense",
+      "label": "National Defense",
+      "percent": 13.0,
+      "amount_usd": 872000000000,
+      "omb_functions": [50]
+    },
+    {
+      "id": "veterans_federal_retirees",
+      "label": "Veterans & Federal Retiree Benefits",
+      "percent": 8.0,
+      "amount_usd": 526000000000,
+      "omb_functions": [700, 602]
+    },
+    {
+      "id": "economic_security",
+      "label": "Economic Security Programs (SNAP, EITC, unemployment, housing aid)",
+      "percent": 7.0,
+      "amount_usd": 476000000000,
+      "omb_functions": [600]
+    },
+    {
+      "id": "other_programs",
+      "label": "All Other Programs (education, transportation, science & research, law enforcement, international)",
+      "percent": 14.0,
+      "amount_usd": null,
+      "omb_functions": [250, 300, 350, 400, 501, 502, 503, 552, 750, 150],
+      "notes": "Lumped bucket - can be split further later using OMB Table 3.2 subfunction data if more granularity is wanted."
+    }
+  ]
+}
