@@ -49,3 +49,7 @@ Then open the local URL Streamlit prints (usually http://localhost:8501).
 This gives a good-faith estimate for illustration. It doesn't account for
 credits, itemized deductions, pre-tax retirement contributions, FICA, or
 local taxes.
+
+
+## Validate the data
+python3 data/validate_data.py
