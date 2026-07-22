@@ -107,11 +107,16 @@ if state_a in spending["states"] and state_b in spending["states"]:
         go.Bar(name=dict(states)[state_b], x=cat_names, y=b_vals, marker_color=MINT),
     ])
     fig3.update_layout(
-        barmode="group", title=f"{dict(states)[state_a]} vs {dict(states)[state_b]} — spending mix (% of total)",
-        yaxis_title="% of state spending",
-        legend=dict(orientation="h", yanchor="bottom", y=1.05),
+    barmode="group",
+    title=dict(
+        text=f"{dict(states)[state_a]} vs {dict(states)[state_b]} — spending mix (% of total)",
+        y=0.95, x=0.5, xanchor="center", yanchor="top",
+    ),
+    yaxis_title="% of state spending",
+    legend=dict(orientation="h", yanchor="top", y=-0.15, x=0.5, xanchor="center"),
+    margin=dict(t=70, b=80),
     )
-    st.plotly_chart(style_fig(fig3, 420), use_container_width=True)
+    st.plotly_chart(style_fig(fig3, 480), use_container_width=True)
 else:
     st.info("Spending category data isn't available for one of these selections.")
 
